@@ -119,6 +119,61 @@ body{
     overflow: hidden;
     // background: url(../img/hero-bg.jpg) no-repeat center center;
     // background-size: cover;
+    &__head{
+        max-width: 723px;
+        position: absolute;
+
+    }
+    &__title{
+        font-weight: 400;
+        font-size: 64px;
+        line-height: 110%;
+        letter-spacing: -0.02em;
+        color: #f7f7f7;
+    }
+    &__desc-up, 
+    &__desc-down{
+        max-width: 623px;
+        font-weight: 400;
+        font-size: 25px;
+        line-height: 110%;
+        color: #fff;
+    }
+    &__desc-up{
+        margin: 0 0 28px 0;
+    }
+    &__desc-down{
+        margin: 0 0 40px 0;
+    }
+    &__weight{
+        font-weight: 700;
+    }
+    &__how{
+        padding: 17px 18px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #fff;
+        border: 2px solid #fff;
+        // opacity: 0.6;
+        background: rgba(6, 37, 91, 0.6);
+        margin-right: 16px;
+        cursor: pointer;
+    }
+    &__contacts{
+        padding: 17px 18px;
+        background: #fff;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 120%;
+        letter-spacing: 0.02em;
+        text-align: center;
+        color: #06255b;
+        border: 2px solid #fff;
+        cursor: pointer;
+    }
     &__bg{
         position: absolute;
         top: 0;
@@ -397,7 +452,7 @@ body{
     }
     &__scroll{
         max-width: 224px;
-        margin: 0 auto;
+        margin: 0 auto 152px auto;
         font-weight: 600;
         font-size: 18px;
         line-height: 120%;
@@ -406,7 +461,7 @@ body{
         color: #53565a;
         svg{
             display: block;
-            margin: 4px auto 0;
+            margin: 15px auto 0;
         }
     }
 }
@@ -444,10 +499,31 @@ body{
     }
 }
 .expertise{
+    &__head{
+        max-width: 536px;
+        margin: 0 auto 50px auto;
+        &-title{
+            margin: 0 0 24px 0;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: -0.03em;
+            text-align: center;
+            color: #000;
+        }
+        &-desc{
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            text-align: center;
+            color: #737b7d;
+        }
+    }
     &__row{
         display: flex;
         background: url(../img/exp_after.svg) repeat-x center bottom;
-       
+        margin: 0 0 168px 0;
     }
     &__col{
         width: 100%;
@@ -528,5 +604,30 @@ body{
             color: #2f3034;
             transition: .3s;
         }
+    }
+    &__info{
+        max-width: 1387px;
+        display: flex;
+        gap: 24px;
+        margin: 0 0 88px 0;
+        &-title{
+            width: 33.3%;
+            margin: 0;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 100%;
+            letter-spacing: -0.03em;
+            color: #000;
+        }
+        &-desc-left,
+        &-desc-right{
+            width: 33.3%;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: #737b7d;
+        }
+        
     }
 }
