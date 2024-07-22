@@ -100,6 +100,7 @@ body{
         margin: 0;
         list-style: none;
         display: flex;
+        z-index: 1;
     }
     &__item + &__item{
         margin-left: 32px;
@@ -130,6 +131,7 @@ body{
         line-height: 110%;
         letter-spacing: -0.02em;
         color: #f7f7f7;
+        margin: 0 0 24px 0;
     }
     &__desc-up, 
     &__desc-down{
@@ -149,6 +151,7 @@ body{
         font-weight: 700;
     }
     &__how{
+        display: inline-block;
         padding: 17px 18px;
         font-weight: 600;
         font-size: 15px;
@@ -157,13 +160,15 @@ body{
         text-align: center;
         color: #fff;
         border: 2px solid #fff;
-        // opacity: 0.6;
+        text-decoration: none;
         background: rgba(6, 37, 91, 0.6);
         margin-right: 16px;
-        cursor: pointer;
+        
     }
     &__contacts{
+        display: inline-block;
         padding: 17px 18px;
+        text-decoration: none;
         background: #fff;
         font-weight: 600;
         font-size: 15px;
@@ -172,7 +177,6 @@ body{
         text-align: center;
         color: #06255b;
         border: 2px solid #fff;
-        cursor: pointer;
     }
     &__bg{
         position: absolute;
@@ -630,4 +634,142 @@ body{
         }
         
     }
+    &__knowhow{
+        position: relative;
+        &-content{
+            position: absolute;
+            top: 45%;
+            left: 67%;
+            max-width: 394px;
+        }
+        &-title{
+            margin: 0 0 37px 0;
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 100%;
+            letter-spacing: -0.04em;
+            color: #000;
+        }
+        &-desc{
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 130%;
+            letter-spacing: 0.02em;
+            color: #737b7d;
+        }
+    }
+    &__planning{
+        position: absolute;
+        display: flex;
+        gap: 24px;
+        left: 31%;
+        top: 0%;
+        max-width: 1007px;
+        height: 145px;
+        box-shadow: 0 20px 50px 0 rgba(6, 37, 91, 0.06);
+        background: #fff;
+        padding: 17px 34px 0 60px;
+    }
+
+    &__item{
+        &:not(:last-child){
+            border-right: 0.50px dashed #a8acad;
+        }
+        &:nth-child(1) {
+            max-width: 203px;
+            height: 128px;
+            padding-right: 24px;
+        }
+        &:nth-child(2) {
+            max-width: 133px;
+            height: 128px;
+            padding-right: 24px;
+        }
+        &:nth-child(3) {
+            max-width: 129px;
+            height: 128px;
+            padding-right: 24px;
+        }
+        &:nth-child(4) {
+            max-width: 123px;
+            height: 128px;
+            padding-right: 24px;
+        }
+        &:nth-child(5) {
+            max-width: 133px;
+            height: 128px;
+            padding-right: 24px;
+        }
+        &-body{
+            position: relative;
+            z-index: 10;
+            box-sizing: border-box;
+            border: none;
+        }
+
+        &-counter{
+            position: relative;
+            display: inline-block;
+            font-weight: 700;
+            font-size: 17px;
+            line-height: 100%;
+            letter-spacing: 0.02em;
+            color: #a8acad;
+            svg{
+                position: absolute;
+                top: 100%;
+                left: 100%;
+                fill: #a8acad;
+            }
+        }
+        &-name{
+            margin: 31px 0 0 0;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 85%;
+            letter-spacing: -0.05em;
+            color: #a8acad;
+        }
+
+    }
+    &__button{
+        position: absolute;
+        display: flex;
+        top: 28.2%;
+        left: 65.3%;
+        &-next{
+            outline: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 71px;
+            height: 71px;
+            background-image: url(../img/arrowright.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #DA5D24;
+        }
+        &-prev{
+            outline: none;
+            border: none;
+            cursor: pointer;
+            padding: 0;
+            width: 71px;
+            height: 71px;
+            background-image: url(../img/arrowleft.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-color: #06255B;
+        }
+    }
 }
+
+.expertise__item-counter.active{
+        color: #2f3034;
+    svg{
+        fill: #2f3034;
+        }
+}
+// .expertise__item-name.active{
+//     color: #2f3034;
+// }
