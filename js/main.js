@@ -1,53 +1,36 @@
-// const swiper = new Swiper(".mySwiper", {
-//     // slidesPerView: 5,
-//     spaceBetween: 24,
-//     freeMode: true,
-//     slidesPerView: "auto",
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
+'use strict';
 
-$(document).ready(function(){
-    $(".toggle").click(function(){
-      // добавление или удаление класса "active" у элемента с id "content" при каждом клике на кнопку
-      $(".expertise__item-counter").toggleClass("active"); 
+window.addEventListener('DOMContentLoaded',function() {
+  const blocks = document.querySelectorAll('.block');
+  let currentIndex = 0;
+
+  function showBlock(index){
+    blocks.forEach(block => {
+      block.classList.remove('active');
     });
-  });
-  $(document).ready(function(){
-    $(".toggle").click(function(){
-      // добавление или удаление класса "active" у элемента с id "content" при каждом клике на кнопку
-      $(".expertise__item-name").toggleClass("active"); 
-    });
+    blocks[index].classList.add('active');
+  }
+
+  showBlock(currentIndex);
+
+  document.getElementById('prevBtn').addEventListener('click', function() {
+    currentIndex = (currentIndex === 0) ? blocks.length - 1 : currentIndex - 1;
+    showBlock(currentIndex);
   });
 
-
-// $(document).ready(function () {
-
-
-// 	$('.expertise__button-next').on('click', function () {
-// 		if ($('.expertise__item-counter.active').index() == -1) {
-// 			$('.expertise__item-counter:first-child').addClass('active');
-// 		} else {
-
-// 			$('.expertise__item-counter.active').expertise__button-next('.expertise__item-counter').addClass('active');
-// 			$('.expertise__item-counter.active').expertise__button-prev('.expertise__item-counter').removeClass('active');
-// 		}
-
-// 	});
+  document.getElementById('nextBtn').addEventListener('click', function() {
+    currentIndex = (currentIndex === blocks.length - 1) ? 0 : currentIndex + 1;
+    showBlock(currentIndex);
+  });
+});
 
 
-// 	$('.expertise__button-prev').on('click', function () {
-// 		if ($('.expertise__item.active').index() == -1) {
-// 			/* без действий */
-// 		} else {
-
-// 			$('.expertise__item.active').prev('expertise__item').addClass('active');
-// 			$('.expertise__item.active').next('dexpertise__item').removeClass('active');
-// 		}
-
-// 	});
-
-
-// });
+let swiper = new Swiper(".mySwiper", {
+  slidesPerView: 4,
+  spaceBetween: 30,
+  loop: true,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

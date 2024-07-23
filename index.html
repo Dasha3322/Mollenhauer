@@ -183,14 +183,15 @@
                 <img class="services__formula-bottom" src="img/formula2.png" alt="">
                 <div class="services__scroll">
                     Scroll to find out how our expertise can help you
-                    <svg width="33" height="17" viewBox="0 0 33 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <a href="#scroll"><svg width="33" height="17" viewBox="0 0 33 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M16.5 7.90104L32.8131 0.313068L16.5 16.6261L0.186932 0.313068L16.5 7.90104Z" fill="#FF7C40" />
                       </svg>
+                    </a>
                 </div>
             </div>
         </div>
         <div class="expertise">
-            <div class="expertise__head">
+            <div id="scroll" class="expertise__head">
                 <h2 class="expertise__head-title">Broad expertise based on decades of experience</h2>
                 <div class="expertise__head-desc">Our services include all types of construction projects that you encounter.</div>
             </div>
@@ -299,8 +300,8 @@
                         <div class="expertise__image">
                             <img src="img/Now how.jpg" alt="">
                         </div>
-                        <div class="expertise__planning">
-                            <div class="expertise__item ">
+                        <div class="expertise__planning blocks">
+                            <div class="expertise__item block">
                                 <div class="expertise__item-body">
                                     <div class="expertise__item-counter">
                                         01
@@ -312,7 +313,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="expertise__item">
+                            <div class="expertise__item block">
                                 <div class="expertise__item-body">
                                     <div class="expertise__item-counter">
                                     02
@@ -324,7 +325,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="expertise__item">
+                            <div class="expertise__item block">
                                 <div class="expertise__item-body">
                                     <div class="expertise__item-counter">
                                         03
@@ -336,8 +337,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="expertise__item">
-                                <div class="expertise__item-body">
+                            <div class="expertise__item block">
+                                <div class="expertise__item-body ">
                                     <div class="expertise__item-counter">
                                         04
                                         <svg width="17" height="17" viewBox="0 0 17 17"  xmlns="http://www.w3.org/2000/svg">
@@ -348,8 +349,8 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="expertise__item">
-                                <div class="expertise__item-body">
+                            <div class="expertise__item blocks">
+                                <div  class="expertise__item-body block">
                                     <div class="expertise__item-counter">
                                         05
                                         <svg width="17" height="17" viewBox="0 0 17 17"  xmlns="http://www.w3.org/2000/svg">
@@ -362,76 +363,9 @@
                             </div>
                         </div>
                         <div class="expertise__button">
-                            <button class="expertise__button-prev toggle"></button>
-                            <button class="expertise__button-next toggle"></button>
+                            <button id="prevBtn" class="expertise__button-prev"></button>
+                            <button id="nextBtn" class="expertise__button-next"></button>
                         </div>
-                        <!-- <div class="swiper mySwiper expertise__swiper">
-                            <div class="swiper-wrapper expertise__wrapper">
-                                <div class="swiper-slide">
-                                    <div class="expertise-slide__body">
-                                        <div class="expertise-slide__counter">
-                                            01
-                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z" fill="#2F3034" />
-                                            </svg>
-                                        </div>
-                                        <div class="expertise-slide__name">Comprehensive planning methodology includes life-cycle know how
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="expertise-slide__body">
-                                        <div class="expertise-slide__counter">
-                                        02
-                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z" fill="#2F3034" />
-                                            </svg>
-                                        </div>
-                                        <div class="expertise-slide__name">Greenfield. Brownfield. Ongoing Operation.
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="expertise-slide__body">
-                                        <div class="expertise-slide__counter">
-                                            03
-                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z" fill="#2F3034" />
-                                            </svg>
-                                        </div>
-                                        <div class="expertise-slide__name">Reuse, rebuild, extend
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="expertise-slide__body">
-                                        <div class="expertise-slide__counter">
-                                            04
-                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z" fill="#2F3034" />
-                                            </svg>
-                                        </div>
-                                        <div class="expertise-slide__name">Renovate, refurbish, revamp
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="expertise-slide__body">
-                                        <div class="expertise-slide__counter">
-                                            05
-                                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M16.9765 9.46582L16.9765 7.66519H9.83781L9.83781 0.526535H8.03719L8.03719 7.66519H0.898527L0.898527 9.46582L8.03719 9.46582L8.03719 16.6045H9.83781L9.83781 9.46582L16.9765 9.46582Z" fill="#2F3034" />
-                                            </svg>
-                                        </div>
-                                        <div class="expertise-slide__name">Demolition
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="swiper-button-next"></div>
-                            <div class="swiper-button-prev">
-                            </div>
-                        </div> -->
                         <div class="expertise__knowhow-content">
                             <h2 class="expertise__knowhow-title">
                                 Comprehensive planning methodology includes life-cycle know how
@@ -441,6 +375,34 @@
                             </div>
                         </div>
                     </div>         
+            </div>
+        </div>
+        <div class="players">
+            <div class="container">
+                <div class="players__item">
+                    <h2 class="players__content-title">Key Players in the cement industry trust us.</h2>
+                    <div class="swiper mySwiper players__swiper">
+                        <div class="swiper-wrapper players__wrapper">
+                          <div class="swiper-slide players__slide">
+                            <img src="img/players/cemex.svg" alt="">
+                          </div>
+                          <div class="swiper-slide players__slide">
+                            <img src="img/players/Zementverk.svg" alt="">
+                          </div>
+                          <div class="swiper-slide players__slide">
+                            <img src="img/players/Buzzi.svg" alt="">
+                          </div>
+                          <div class="swiper-slide players__slide">
+                            <img src="img/players/Thomas.svg" alt="">
+                          </div>
+                        </div>
+                        <div class="swiper-button-next players__btn-next"></div>
+                        <div class="swiper-button-prev players__btn-prev"></div>
+                      </div>
+                </div>
+                <div class="players__content">
+                    
+                </div>
             </div>
         </div>
     </main>
