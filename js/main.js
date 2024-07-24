@@ -25,12 +25,24 @@ window.addEventListener('DOMContentLoaded',function() {
 });
 
 
-let swiper = new Swiper(".mySwiper", {
+let swiper1 = new Swiper(".players__swiper", {
   slidesPerView: 4,
   spaceBetween: 30,
   loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".players__btn-next",
+    prevEl: ".players__btn-prev",
+  },
+});
+let swiper2 = new Swiper(".players__feedback-swiper", {
+  slidesPerView: 1,
+  loop: true,
+  pagination: {
+    el: ".players__feedback-pag",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".players__feedback-next",
+    prevEl: ".players__feedback-prev",
   },
 });

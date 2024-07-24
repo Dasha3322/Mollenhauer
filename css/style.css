@@ -26,7 +26,7 @@ body {
   left: 0;
   width: 100%;
   top: 0;
-  z-index: 10;
+  z-index: 110;
 }
 .header__row {
   display: flex;
@@ -745,7 +745,10 @@ body {
   color: #2f3034;
 }
 
-.players__content-title {
+.players__item {
+  margin-bottom: 92px;
+}
+.players__item-title {
   margin: 0 0 32px 0;
   max-width: 370px;
   font-weight: 700;
@@ -758,13 +761,15 @@ body {
   margin: 0 0 92px;
 }
 .players__wrapper {
-  height: 128px;
+  min-height: 128px;
+  box-sizing: border-box;
 }
 .players__slide {
-  text-align: center;
+  min-height: 128px;
 }
 .players__slide img {
-  margin-top: 60px;
+  margin-top: 50px;
+  margin-left: 73px;
 }
 .players__slide:not(:last-child) {
   border-right: 0.5px dashed #2f3034;
@@ -785,4 +790,165 @@ body {
 }
 .players__btn-prev::after {
   display: none;
+}
+.players__content {
+  max-width: 328px;
+}
+.players__content-title {
+  margin: 0 0 24px 0;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.03em;
+  color: #000;
+}
+.players__content-desc {
+  max-width: 290px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.02em;
+  color: #737b7d;
+}
+.players__feedback {
+  margin-bottom: 163px;
+}
+.players__feedback-content {
+  position: relative;
+}
+.players__feedback-swiper {
+  position: relative;
+  box-sizing: border-box;
+  max-width: 578px;
+  min-height: 600px;
+}
+.players__feedback-slide {
+  position: relative;
+  box-sizing: border-box;
+  overflow: visible;
+  border-top: 38px solid #ff7c40;
+  border-bottom: 38px solid #ff7c40;
+}
+.players__feedback-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 38px;
+  height: 86px;
+  background-color: #ff7c40;
+  transform: translate(-38px, 521px);
+}
+.players__feedback-slide::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 38px;
+  height: 82px;
+  background-color: #ff7c40;
+  transform: translate(-38px, -1px);
+}
+.players__feedback-slide1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 38px;
+  height: 127px;
+  background-color: #ff7c40;
+  transform: translate(0, 508px);
+}
+.players__feedback-slide1::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 38px;
+  height: 86px;
+  background-color: #ff7c40;
+  transform: translate(0px, 34px);
+}
+.players__feedback-image {
+  margin: 89px 0 40px 75px;
+}
+.players__feedback-bq {
+  margin: 0 0 86px 75px;
+  font-family: "Minion Pro";
+  font-style: italic;
+  font-weight: 500;
+  font-size: 19px;
+  line-height: 150%;
+  letter-spacing: 0.01em;
+  color: #4a4b4e;
+}
+.players__feedback-bq p {
+  margin: 0;
+}
+.players__feedback-text {
+  max-width: 95px;
+  margin: 0 0 73px 73px;
+}
+.players__feedback-pag {
+  position: absolute;
+  text-align: justify;
+  left: 308px !important;
+  bottom: -7px !important;
+}
+.players__feedback-prev {
+  position: absolute;
+  top: 93.4%;
+  left: 75.1%;
+  width: 71px;
+  height: 71px;
+  background-image: url(../img/arrowleft.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #06255B;
+}
+.players__feedback-prev::after {
+  display: none;
+}
+.players__feedback-prev:hover {
+  background-color: #182f58;
+}
+.players__feedback-next {
+  position: absolute;
+  top: 93.4%;
+  right: 15%;
+  width: 71px;
+  height: 71px;
+  background-image: url(../img/arrowright.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #DA5D24;
+}
+.players__feedback-next::after {
+  display: none;
+}
+.players__feedback-next:hover {
+  background-color: #bb5221;
+}
+.players__text-title {
+  margin: 0 0 14px 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1;
+  color: #2f3034;
+}
+.players__text-desc {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  color: #ff7c40;
+}
+
+.swiper-pagination-bullet {
+  width: 11px !important;
+  height: 11px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ff7c40 !important;
 }
