@@ -1,6 +1,5 @@
 @import 'normalize.css';
 @import 'fonts.css';
-html,
 body {
   font-family: "Source Sans Pro", sans-serif;
   color: #000;
@@ -8,10 +7,6 @@ body {
   line-height: 24px;
   overflow-x: hidden;
   box-sizing: border-box;
-}
-
-.main {
-  overflow-x: hidden;
 }
 
 .container {
@@ -113,7 +108,6 @@ body {
 .hero {
   position: relative;
   min-height: 100dvh;
-  overflow: hidden;
 }
 .hero__head {
   max-width: 723px;
@@ -366,12 +360,12 @@ body {
   content: "";
   position: absolute;
   left: 0;
-  top: 0;
+  top: -111px;
   background: #06255b;
   height: 100%;
   width: 100%;
-  -webkit-clip-path: polygon(0 0, 0% 75%, 59.1% 0);
-          clip-path: polygon(0 0, 0% 75%, 59.1% 0);
+  -webkit-clip-path: polygon(0 0, 0% 86%, 65.5% 0);
+          clip-path: polygon(0 0, 0% 86%, 65.5% 0);
 }
 .services__head {
   position: relative;
